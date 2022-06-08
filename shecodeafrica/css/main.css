@@ -1,0 +1,579 @@
+/* otomanopee-one-regular - latin */
+@font-face {
+    font-family: 'Otomanopee One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/otomanopee-one-v1-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/otomanopee-one-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/otomanopee-one-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/otomanopee-one-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/otomanopee-one-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/otomanopee-one-v1-latin-regular.svg#OtomanopeeOne') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v27-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v27-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main{
+    display: block;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-family: 'Otomanopee One';
+    
+}
+h2{
+    font-family: 'Otomanopee One';;
+}
+h3{
+    font-family: 'Open Sans';
+}
+p{
+    font-family: 'Open Sans';
+}
+header{
+    padding: 0 0px;
+    
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0px 10px #d4d4d4, 0 5px 5px #e6e6e6;
+    list-style-type: none;
+    justify-content: center;
+    font-family: 'Otomanopee One';
+    font-size: 1.5rem;
+}
+.headerLogo{
+    max-width: 3.5rem;
+    padding: 1rem;
+    box-sizing: content-box;
+    order:0
+}
+.nav-item1 a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    order: 1;
+    text-align: end;
+    color: black;
+}
+.nav-item2 a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    order: 2;
+    text-align: start;
+    color: black;
+}
+.nav-item1:active{
+    color: darkmagenta;
+    border-bottom: 0.25rem solid var(--pink);
+}
+.nav-item2 a:active{
+    color: darkmagenta;
+}
+.nav-item1 a:hover{
+    color: darkmagenta;
+}
+.nav-item2 a:hover{
+    color: darkmagenta;
+}
+@media(min-width:23rem){
+    .nav-item{
+        order: 0;
+        text-align: end;
+    }
+}
+@media(min-width:23rem){
+    .headerLogo{
+        order: 1;    
+    }
+}    
+@media(min-width:23rem){
+    .nav-item1{
+        text-align: end;
+        order: 0;
+    }
+}
+@media(min-width:23rem){
+    .nav-item2{
+        text-align: start;
+        order: 2;
+    }
+}
+@media(min-width:23rem){
+    .nav-item1 .nav-item2{
+        margin: 0 0.25rem;
+        padding: 0 0.5rem;
+    }
+}
+@media(min-width:21rem){
+    .nav-list{
+        align-items: flex-end;
+        flex-direction: row;
+    }
+}
+@media(min-width:30rem){
+    .nav-list{
+        justify-content: space-between;
+    }
+}
+@media(min-width:30rem){
+    .nav-item1{
+        order: 1;
+        display: block;
+        margin-left: auto;
+        width: auto;
+        padding: 0.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media(min-width:30rem){
+    .nav-item2{
+        order: 2;
+        display: block;
+        width: auto;
+        padding: 0.5rem;
+        margin-right: 18rem;
+    }
+}
+@media(min-width:30rem){
+    .headerLogo{
+        margin-left: 20rem;
+    }
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.mainHomeBox{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 40rem; 
+}
+.imgBox{
+    display: inline-block;
+}
+.imgBox img{
+    width: 75%;
+    margin-left: 80px;
+}
+.text-intro{
+    margin-top: 50px;
+    width: 30%;
+    display: inline-block;
+}
+.text-intro h1 span{
+    color: rgb(95, 1, 87);
+}
+.text-intro h1{
+    font-size: 3rem;
+}
+.text-intro p{
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+button{
+    position: relative;
+    font-size: 1rem;
+    padding: 10px 25px;
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 6.5px;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+    font-family: 'Open Sans';
+}
+button::after{
+    content: '➜';
+    background-image: url('images/arrow--right.svg');
+    position: absolute;
+    transition: 1s;
+    opacity: -100%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.mainSupportBox{
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+    background: grey;
+    width: 100%;  
+}
+.overview{
+    display: block;
+}
+.titleSupportBox{
+    display: flex;
+    font-family: 'Otomanopee One';
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.supportBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0rem 7rem 0rem;
+}
+.supportBox .card{
+    position: relative;
+    max-width: 320px;
+    background: white;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+} 
+.supportBox .card .imgSupportBox{
+    max-width: 320px;
+    flex: 0 0 320px;
+    border-radius: 10px;
+}
+.supportBox .card .imgSupportBox img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.supportBox .card .text-support{
+    margin-left: 20px;
+}
+.text-support{
+    font-family: 'Open Sans';
+}
+.text-support img{
+    height: 30px;
+    width: 30px;
+    flex-wrap: nowrap;
+}
+.boxFlagText{
+    display: flex;
+    align-items: center;
+}
+.flag{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+    height: 60px;
+}
+.boxFlagText .flag img{
+    width: 70%;
+    height: 70%;
+}
+.title{
+    display: inline-block;
+    width: 55%;
+    height: auto;
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.progressbar{
+    width: 100%;
+    max-width: 15rem;
+}
+.progress_wrapper{
+    height: 0.7rem;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+  
+.progress_value{
+    height: 0.7rem;
+    background-color: blue;
+    border-radius: 6px;
+}
+  
+.progress_value--25{
+    width: 25%;
+}
+.progress_value--45{
+    width: 45%;
+}
+.progress_value--90{
+    width: 90%;
+}
+
+footer{
+	background-color: rgb(37, 37, 37);
+	padding: 4rem 2rem;
+}
+
+.footerLogo img{
+	width: 30rem;
+	max-width: 100%;
+}
+.footerAnimation{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+marquee{
+    position: absolute;
+    background-color: rgb(180, 0, 111);
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    left: -14%;
+    top: 8%;
+    width: 60%;
+    max-height: 5rem;
+    min-height: 2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    transform: rotate(48.5deg)translate(50%);
+}
+
+@media (min-width: 30rem){
+    marquee{
+        height: 5rem;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+}
+
+
+.aboutBox{
+    width: 50rem;
+    max-width: 100%;
+    padding: 3rem 0.5rem;
+    margin: auto;
+}
+.aboutBoxText{
+    margin-left: 4rem;
+    font-size: 1.5rem;
+}
+.aboutImg{
+    background-image: url("../images/meeting-photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 300px;
+    
+}
+.aboutBox h1{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.aboutBox a{
+    color: black;
+}
+.aboutBox span{
+    color: rgb(95, 1, 87);
+}
+.mainAboutBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background: white;
+    width: 100%;
+    padding-top: 5rem;  
+}
+.AboutBoxPersons{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    column-gap: 20px;
+}
+.AboutBoxPersons .person{
+    position: relative;
+    max-width: 350px;
+    background: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.AboutBoxPersons .person .imgPersonBox{
+    max-width: 165px;
+    flex: 0 0 165px;
+
+}
+.AboutBoxPersons .person .imgPersonBox img{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    border: 5px solid orangered;
+    padding: 5px;
+}
+.text-about{
+    margin: 10px;
+}
+.titlePerson{
+    padding-left: 100px;
+    font-size: 30px;
+    padding-top: 2rem;
+}
+.text-support{
+    margin-left: 40px;
+}
+.titlePerson span{
+    color: rgb(95, 1, 87);
+}
+
+
+
+
+.boxsupport{
+    width: 50rem; 
+    max-width: 100%;
+    padding: 4rem 1rem;
+    margin: auto;
+}
+.text-support-us{
+    margin-left: 40px;
+}
+.text-support-us p{
+    font-size: 1.5rem;
+}
+.text-support-us h1{
+    font-size: 2.5rem;
+}
+.text-support-us h1 span{
+    color: rgb(95, 1, 87);
+}
+
+.animation-support{
+    display: inline-block;
+    background-image: url('../images/triangle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(70deg);
+    transform-origin: 50% 60%;
+    width: 6.3rem;
+    height: 6.3rem;
+    animation-name: triangle;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.animation{
+    position: relative;
+    text-align: center;
+    margin: 0 1rem 1rem 0;
+}
+@media (min-width:30rem)
+ { .animation { float: left;}
+}
+.animation-text{
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 6rem;
+}
+.animation-text p{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+@keyframes triangle{
+    0%{
+        transform: rotate(50deg);
+    }
+    20%{
+        transform: rotate(150deg);
+    }
+    40%{
+        transform: rotate(350deg);
+    }
+    60%{
+        transform: rotate(300deg);
+    }
+    80%{
+        transform: rotate(350deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}
+figure{
+    border-left: 0.35rem solid darkmagenta;
+}
+@media (min-width: 30rem) {
+	figure {
+		padding: 1rem 3rem;
+	}
+}
+@media (min-width: 50rem) {
+	figure {
+		width: 38rem;
+		margin: auto;
+		margin-top: 4rem;
+	}
+}
+figcaption{
+    color: purple;
+}
+blockquote p {
+	font-family: 'Otomanopee-One';
+	color: darkgray;
+	font-size: 3rem;
+    font-weight: bold;
+}
+.gradientBox{
+    background: rgb(9, 34, 199);
+	background: linear-gradient(135deg, rgb(83, 100, 211) 0%, rgba(129, 85, 200, 1) 25%, rgba(203, 88, 187, 1) 50%, rgba(228, 145, 153, 1) 75%, rgba(254, 202, 113, 1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1.5rem;
+    margin: 4rem 0rem 4rem 0rem;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    max-width: 100%;
+    padding: 2rem;
+}
